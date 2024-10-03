@@ -3,19 +3,6 @@ import { ArrowRight, Database, Zap, Globe, Shield, Search, FileCheck, UserCheck,
 import { Button } from "@/components/ui/button";
 
 const Index = () => {
-  const [headlineColor, setHeadlineColor] = useState('text-white');
-
-  useEffect(() => {
-    const colors = ['from-blue-400', 'from-purple-400', 'from-green-400', 'from-pink-400'];
-    let colorIndex = 0;
-    const intervalId = setInterval(() => {
-      setHeadlineColor(`bg-gradient-to-r ${colors[colorIndex]} to-white bg-clip-text text-transparent`);
-      colorIndex = (colorIndex + 1) % colors.length;
-    }, 3000);
-
-    return () => clearInterval(intervalId);
-  }, []);
-
   return (
     <div className="min-h-screen bg-black text-white font-sans">
       <header className="container mx-auto py-6 flex justify-between items-center">
@@ -43,7 +30,7 @@ const Index = () => {
           ></div>
           <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
           <div className="container mx-auto text-center relative z-20">
-            <h1 className={`text-6xl font-bold mb-6 leading-tight transition-colors duration-500 ${headlineColor}`}>
+            <h1 className="text-6xl font-bold mb-6 leading-tight animated-text">
               Leading Experts in Tech Leadership Talent
             </h1>
             <p className="text-xl mb-8 max-w-3xl mx-auto font-light text-gray-300">
@@ -163,6 +150,28 @@ const Index = () => {
           <p>&copy; 2023 CTO Recruitment. All rights reserved.</p>
         </div>
       </footer>
+      
+      <style jsx>{`
+        @keyframes textGradient {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+        .animated-text {
+          background: linear-gradient(270deg, #3b82f6, #8b5cf6, #ec4899, #f59e0b);
+          background-size: 300% 300%;
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+          animation: textGradient 10s ease infinite;
+        }
+      `}</style>
     </div>
   );
 };
