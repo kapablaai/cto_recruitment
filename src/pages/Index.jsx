@@ -11,7 +11,6 @@ const Index = () => {
 
       <main className="relative">
         <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
           <div 
             className="absolute inset-0 z-0 bg-gradient-to-br from-gray-900 to-black"
             style={{
@@ -35,9 +34,22 @@ const Index = () => {
             </Button>
           </div>
         </div>
+
+        {/* New section: Expertise in CTO and Tech Leadership Recruitment */}
+        <div className="bg-gray-100 text-black py-20">
+          <div className="container mx-auto">
+            <h2 className="text-4xl font-bold mb-8 text-center">Expertise in CTO and Tech Leadership Recruitment</h2>
+            <div className="max-w-4xl mx-auto">
+              <p className="text-lg mb-6">
+                At CTO Recruitment, we specialize in identifying and attracting top-tier talent for CTO and senior tech leadership roles. With years of experience in executive search and headhunting, we understand that every company has unique needs. That's why we provide tailored solutions, whether you're a startup seeking a visionary leader for digital transformation or an enterprise requiring a strategic tech expert to drive global growth.
+              </p>
+              <p className="text-lg">
+                Our exclusive network of candidates sets us apart. We connect you with top tech leaders who are not available on the open market, ensuring that you have access to the best talent in the industry. With our thorough and discreet process, we find the right individual to propel your business forward with precision and confidentiality.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div className="container mx-auto py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div className="container mx-auto py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <FeatureCard
             icon={<Database className="h-8 w-8" />}
@@ -60,9 +72,8 @@ const Index = () => {
             description="Discreet and thorough evaluation of candidates"
           />
         </div>
-        </div>
 
-        {/* New Process Section */}
+        {/* Process Section */}
         <div className="bg-gray-100 text-black py-20">
           <div className="container mx-auto">
             <h2 className="text-4xl font-bold mb-12 text-center">Our Process – Efficient, Confidential, and Tech-Focused</h2>
@@ -93,7 +104,7 @@ const Index = () => {
 
         <div className="bg-gray-900 text-white py-20">
           <div className="container mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center">Tap in to an exclusive pool of Tech Leaders across Sweden</h2>
+            <h2 className="text-4xl font-bold mb-12 text-center">Tap into an exclusive pool of Tech Leaders across Sweden</h2>
             <div className="flex flex-col md:flex-row items-center justify-center gap-12">
               <div className="md:w-1/3 flex flex-col items-center">
                 <img src="/jonas-axelsson.jpg" alt="Jonas Axelsson" className="w-48 h-48 rounded-full mb-6 object-cover" />
