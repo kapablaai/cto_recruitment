@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Database, Zap, Globe, Shield } from 'lucide-react';
+import { ArrowRight, Database, Zap, Globe, Shield, Search, FileCheck, UserCheck, Lock } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
 const Index = () => {
@@ -88,6 +88,34 @@ const Index = () => {
             </p>
           </div>
         </div>
+
+        <div className="bg-white text-black py-20">
+          <div className="container mx-auto">
+            <h2 className="text-4xl font-light mb-8 text-center">Our Process – Efficient, Confidential, and Tech-Focused</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+              <ProcessStep
+                icon={<Search className="h-8 w-8" />}
+                title="Analysis and Needs Assessment"
+                description="We start by understanding your business, culture, and the specific challenges you face in your technical landscape."
+              />
+              <ProcessStep
+                icon={<Globe className="h-8 w-8" />}
+                title="Network-Based Search"
+                description="We leverage our extensive network of CTOs and tech leaders, using modern search methods to identify potential candidates."
+              />
+              <ProcessStep
+                icon={<FileCheck className="h-8 w-8" />}
+                title="Thorough Evaluation"
+                description="Each candidate undergoes a comprehensive evaluation to ensure they possess the skills, experience, and leadership qualities required for success."
+              />
+              <ProcessStep
+                icon={<Lock className="h-8 w-8" />}
+                title="Confidential Presentation"
+                description="We only present candidates who align with your high standards, ensuring a structured and confidential process."
+              />
+            </div>
+          </div>
+        </div>
       </main>
 
       <footer className="container mx-auto mt-20 py-6 text-center text-gray-500 font-light">
@@ -103,6 +131,16 @@ const FeatureCard = ({ icon, title, description }) => {
       <div className="mb-4">{icon}</div>
       <h3 className="text-xl font-light mb-2">{title}</h3>
       <p className="text-gray-400 font-light">{description}</p>
+    </div>
+  );
+};
+
+const ProcessStep = ({ icon, title, description }) => {
+  return (
+    <div className="text-center">
+      <div className="mb-4 flex justify-center">{icon}</div>
+      <h3 className="text-xl font-light mb-2">{title}</h3>
+      <p className="text-gray-600 font-light">{description}</p>
     </div>
   );
 };
