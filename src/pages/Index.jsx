@@ -125,6 +125,20 @@ const Index = () => {
             </p>
           </div>
         </div>
+
+        <div className="bg-white text-black py-20">
+          <div className="container mx-auto">
+            <h2 className="text-4xl font-medium mb-8 text-center">Contact Us for a Confidential Consultation</h2>
+            <p className="text-xl font-light leading-relaxed max-w-4xl mx-auto text-center">
+              Choose CTO Recruitment – Sweden's leading partner for CTO and tech leadership recruitment. Contact us today for a confidential consultation and discover how we can help you secure the right technical leader for your organization's future.
+            </p>
+            <div className="mt-8 text-center">
+              <Button className="bg-black text-white hover:bg-gray-800 font-light">
+                Get in Touch <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </div>
+          </div>
+        </div>
       </main>
 
       <footer className="container mx-auto mt-20 py-6 text-center text-gray-500 font-light">
