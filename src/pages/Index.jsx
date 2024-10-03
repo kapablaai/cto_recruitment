@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Database, Zap, Globe, Shield } from 'lucide-react';
+import { ArrowRight, Database, Zap, Globe, Shield, CheckCircle } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
 const Index = () => {
@@ -10,6 +10,7 @@ const Index = () => {
       </header>
 
       <main className="relative">
+        <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
           <div 
             className="absolute inset-0 z-0 bg-gradient-to-br from-gray-900 to-black"
@@ -34,7 +35,9 @@ const Index = () => {
             </Button>
           </div>
         </div>
+        </div>
 
+        <div className="container mx-auto py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div className="container mx-auto py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <FeatureCard
             icon={<Database className="h-8 w-8" />}
@@ -56,6 +59,36 @@ const Index = () => {
             title="Confidential Process"
             description="Discreet and thorough evaluation of candidates"
           />
+        </div>
+        </div>
+
+        {/* New Process Section */}
+        <div className="bg-gray-100 text-black py-20">
+          <div className="container mx-auto">
+            <h2 className="text-4xl font-bold mb-12 text-center">Our Process – Efficient, Confidential, and Tech-Focused</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <ProcessStep
+                icon={<CheckCircle className="h-8 w-8 text-blue-600" />}
+                title="Analysis and Needs Assessment"
+                description="We start by understanding your business, culture, and the specific challenges you face in your technical landscape."
+              />
+              <ProcessStep
+                icon={<CheckCircle className="h-8 w-8 text-blue-600" />}
+                title="Network-Based Search"
+                description="We leverage our extensive network of CTOs and tech leaders, using modern search methods to identify potential candidates."
+              />
+              <ProcessStep
+                icon={<CheckCircle className="h-8 w-8 text-blue-600" />}
+                title="Thorough Evaluation"
+                description="Each candidate undergoes a comprehensive evaluation to ensure they possess the skills, experience, and leadership qualities required for success."
+              />
+              <ProcessStep
+                icon={<CheckCircle className="h-8 w-8 text-blue-600" />}
+                title="Confidential Presentation"
+                description="We only present candidates who align with your high standards, ensuring a structured and confidential process."
+              />
+            </div>
+          </div>
         </div>
 
         <div className="bg-gray-900 text-white py-20">
@@ -90,7 +123,6 @@ const Index = () => {
             </div>
           </div>
         </div>
-
       </main>
 
       <footer className="bg-black py-10 text-center text-gray-500 font-light">
@@ -101,15 +133,9 @@ const Index = () => {
       
       <style jsx>{`
         @keyframes textGradient {
-          0% {
-            background-position: 0% 50%;
-          }
-          50% {
-            background-position: 100% 50%;
-          }
-          100% {
-            background-position: 0% 50%;
-          }
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
         }
         .animated-text {
           background: linear-gradient(270deg, #3b82f6, #8b5cf6, #ec4899, #f59e0b);
@@ -130,6 +156,18 @@ const FeatureCard = ({ icon, title, description }) => {
       <div className="mb-4 text-blue-400">{icon}</div>
       <h3 className="text-xl font-bold mb-2">{title}</h3>
       <p className="text-gray-400 font-light">{description}</p>
+    </div>
+  );
+};
+
+const ProcessStep = ({ icon, title, description }) => {
+  return (
+    <div className="bg-white p-6 rounded-lg shadow-md">
+      <div className="flex items-center mb-4">
+        {icon}
+        <h3 className="text-xl font-bold ml-2">{title}</h3>
+      </div>
+      <p className="text-gray-600">{description}</p>
     </div>
   );
 };
