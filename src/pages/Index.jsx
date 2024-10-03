@@ -6,10 +6,10 @@ const Index = () => {
   const [headlineColor, setHeadlineColor] = useState('text-white');
 
   useEffect(() => {
-    const colors = ['text-blue-400', 'text-purple-400', 'text-green-400', 'text-pink-400'];
+    const colors = ['from-blue-400', 'from-purple-400', 'from-green-400', 'from-pink-400'];
     let colorIndex = 0;
     const intervalId = setInterval(() => {
-      setHeadlineColor(colors[colorIndex]);
+      setHeadlineColor(`bg-gradient-to-r ${colors[colorIndex]} to-white bg-clip-text text-transparent`);
       colorIndex = (colorIndex + 1) % colors.length;
     }, 3000);
 
@@ -155,6 +155,7 @@ const Index = () => {
             </div>
           </div>
         </div>
+
       </main>
 
       <footer className="bg-black py-10 text-center text-gray-500 font-light">
