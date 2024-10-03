@@ -70,6 +70,15 @@ const Index = () => {
             </p>
           </div>
         </div>
+
+        <div className="bg-white text-black py-20">
+          <div className="container mx-auto">
+            <h2 className="text-4xl font-light mb-8 text-center">Tailored Solutions for Your Unique Needs</h2>
+            <p className="text-xl font-light leading-relaxed max-w-4xl mx-auto text-center">
+              We understand that every organization has unique requirements. That's why we work closely with you to create tailored solutions that address your specific needs. From startups looking for a forward-thinking CTO to global enterprises seeking a strategic tech leader with operational excellence – we find the right individual to drive your business forward.
+            </p>
+          </div>
+        </div>
       </main>
 
       <footer className="container mx-auto mt-20 py-6 text-center text-gray-500 font-light">
