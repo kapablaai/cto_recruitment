@@ -60,25 +60,25 @@ const Index = () => {
 
         <div className="bg-gray-900 text-white py-20">
           <div className="container mx-auto">
-            <h2 className="text-4xl font-bold mb-8 text-center">Tap in to an exclusive pool of Tech Leaders across Sweden</h2>
-            <div className="flex flex-col md:flex-row items-center justify-center">
-              <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
-                <img src="/jonas-axelsson.jpg" alt="Jonas Axelsson" className="w-64 h-64 rounded-full mb-6 mx-auto object-cover" />
-                <h3 className="text-2xl font-bold mb-2 text-center">Jonas Axelsson</h3>
-                <p className="text-xl mb-4 text-center">Head of Tech Recruitment</p>
-                <p className="text-lg mb-2 text-center">
+            <h2 className="text-4xl font-bold mb-12 text-center">Tap in to an exclusive pool of Tech Leaders across Sweden</h2>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-12">
+              <div className="md:w-1/3 flex flex-col items-center">
+                <img src="/jonas-axelsson.jpg" alt="Jonas Axelsson" className="w-48 h-48 rounded-full mb-6 object-cover" />
+                <h3 className="text-2xl font-bold mb-2">Jonas Axelsson</h3>
+                <p className="text-xl mb-4">Head of Tech Recruitment</p>
+                <p className="text-lg mb-2">
                   <a href="mailto:jonas@startuprecruitment.se" className="text-blue-400 hover:underline">
                     jonas@startuprecruitment.se
                   </a>
                 </p>
-                <p className="text-lg text-center">
+                <p className="text-lg">
                   <a href="https://www.linkedin.com/in/jonasaxelssonsthlm/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
                     LinkedIn Profile
                   </a>
                 </p>
               </div>
-              <div className="md:w-1/2">
-                <p className="text-xl font-light leading-relaxed mb-6 text-gray-300">
+              <div className="md:w-2/3">
+                <p className="text-xl font-light leading-relaxed mb-8 text-gray-300">
                   Choose CTO Recruitment – Sweden's leading partner for CTO and tech leadership recruitment. Contact us today for a confidential consultation and discover how we can help you secure the right technical leader for your organization's future.
                 </p>
                 <div className="text-center">
