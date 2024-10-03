@@ -16,16 +16,34 @@ const Index = () => {
         </nav>
       </header>
 
-      <main className="container mx-auto mt-20 text-center">
-        <h1 className="text-6xl font-bold mb-6">Leading Experts in Tech Leadership Talent</h1>
-        <p className="text-xl mb-8 max-w-3xl mx-auto">
-          Sweden's most experienced and respected executive search firm specializing exclusively in CTO and tech leadership roles.
-        </p>
-        <Button className="bg-white text-black hover:bg-gray-200">
-          Book a Consultation <ArrowRight className="ml-2 h-4 w-4" />
-        </Button>
+      <main className="relative">
+        {/* Hero section with GIF background */}
+        <div className="relative h-screen flex items-center justify-center overflow-hidden">
+          {/* GIF background */}
+          <div 
+            className="absolute inset-0 z-0"
+            style={{
+              backgroundImage: "url('/path/to/your/gif.gif')",
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+            }}
+          ></div>
+          {/* Overlay to ensure text readability */}
+          <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
+          {/* Content */}
+          <div className="container mx-auto text-center relative z-20">
+            <h1 className="text-6xl font-bold mb-6">Leading Experts in Tech Leadership Talent</h1>
+            <p className="text-xl mb-8 max-w-3xl mx-auto">
+              Sweden's most experienced and respected executive search firm specializing exclusively in CTO and tech leadership roles.
+            </p>
+            <Button className="bg-white text-black hover:bg-gray-200">
+              Book a Consultation <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </div>
+        </div>
 
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="container mx-auto mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <FeatureCard
             icon={<Database className="h-8 w-8" />}
             title="Extensive Network"
