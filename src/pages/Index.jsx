@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Database, Zap, Globe, Shield, Search, FileCheck, Lock } from 'lucide-react';
+import { ArrowRight, Database, Zap, Globe, Shield } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
 const Index = () => {
@@ -60,7 +60,7 @@ const Index = () => {
 
         <div className="bg-gray-900 text-white py-20">
           <div className="container mx-auto">
-            <h2 className="text-4xl font-bold mb-8 text-center">Contact Our Head of Tech Recruitment</h2>
+            <h2 className="text-4xl font-bold mb-8 text-center">Tap in to an exclusive pool of Tech Leaders across Sweden</h2>
             <div className="flex flex-col md:flex-row items-center justify-center">
               <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
                 <img src="/jonas-axelsson.jpg" alt="Jonas Axelsson" className="w-64 h-64 rounded-full mb-6 mx-auto object-cover" />
@@ -128,16 +128,6 @@ const FeatureCard = ({ icon, title, description }) => {
   return (
     <div className="bg-gray-800 p-6 rounded-lg transition-transform hover:scale-105">
       <div className="mb-4 text-blue-400">{icon}</div>
-      <h3 className="text-xl font-bold mb-2">{title}</h3>
-      <p className="text-gray-400 font-light">{description}</p>
-    </div>
-  );
-};
-
-const ProcessStep = ({ icon, title, description }) => {
-  return (
-    <div className="text-center">
-      <div className="mb-4 flex justify-center text-blue-400">{icon}</div>
       <h3 className="text-xl font-bold mb-2">{title}</h3>
       <p className="text-gray-400 font-light">{description}</p>
     </div>
