@@ -61,6 +61,15 @@ const Index = () => {
             description="Discreet and thorough evaluation of candidates"
           />
         </div>
+
+        <div className="bg-gray-100 text-black py-20 mt-20">
+          <div className="container mx-auto">
+            <h2 className="text-4xl font-light mb-8 text-center">Our Expertise in CTO and Tech Leadership Recruitment</h2>
+            <p className="text-xl font-light leading-relaxed max-w-4xl mx-auto text-center">
+              With extensive experience in headhunting and executive search, CTO Recruitment excels in identifying and attracting the most qualified talent for CTO and other senior tech leadership positions. Whether your company requires a visionary leader for digital transformation, a strategic mind for technical innovation, or expertise in scaling global systems, we ensure precision and confidentiality in every step of the process.
+            </p>
+          </div>
+        </div>
       </main>
 
       <footer className="container mx-auto mt-20 py-6 text-center text-gray-500 font-light">
