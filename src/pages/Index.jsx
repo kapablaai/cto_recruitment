@@ -79,6 +79,15 @@ const Index = () => {
             </p>
           </div>
         </div>
+
+        <div className="bg-gray-100 text-black py-20">
+          <div className="container mx-auto">
+            <h2 className="text-4xl font-light mb-8 text-center">An Exclusive Network of Top Tech Leaders</h2>
+            <p className="text-xl font-light leading-relaxed max-w-4xl mx-auto text-center">
+              Our reputation is built on our exclusive network of top candidates, specializing in CTO and tech leadership roles that are not available on the open market. Through our thorough and discreet process, we ensure your organization gains access to the best technical leaders in the industry.
+            </p>
+          </div>
+        </div>
       </main>
 
       <footer className="container mx-auto mt-20 py-6 text-center text-gray-500 font-light">
