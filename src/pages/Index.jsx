@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { ArrowRight, Database, Zap, Globe, Shield, Search, FileCheck, UserCheck, Lock } from 'lucide-react';
+import React from 'react';
+import { ArrowRight, Database, Zap, Globe, Shield, Search, FileCheck, Lock } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
 const Index = () => {
@@ -7,13 +7,6 @@ const Index = () => {
     <div className="min-h-screen bg-black text-white font-sans">
       <header className="container mx-auto py-6 flex justify-between items-center">
         <div className="text-2xl font-medium">CTO Recruitment</div>
-        <nav>
-          <ul className="flex space-x-6 text-sm font-light">
-            <li><a href="#" className="hover:text-gray-300 transition-colors">Services</a></li>
-            <li><a href="#" className="hover:text-gray-300 transition-colors">About</a></li>
-            <li><a href="#" className="hover:text-gray-300 transition-colors">Contact</a></li>
-          </ul>
-        </nav>
       </header>
 
       <main className="relative">
@@ -63,6 +56,27 @@ const Index = () => {
             title="Confidential Process"
             description="Discreet and thorough evaluation of candidates"
           />
+        </div>
+
+        <div className="bg-gray-900 text-white py-20">
+          <div className="container mx-auto">
+            <h2 className="text-4xl font-bold mb-8 text-center">Contact Our Head of Tech Recruitment</h2>
+            <div className="flex flex-col items-center">
+              <img src="/jonas-axelsson.jpg" alt="Jonas Axelsson" className="w-64 h-64 rounded-full mb-6 mx-auto object-cover" />
+              <h3 className="text-2xl font-bold mb-2">Jonas Axelsson</h3>
+              <p className="text-xl mb-4">Head of Tech Recruitment</p>
+              <p className="text-lg mb-2">
+                <a href="mailto:jonas@startuprecruitment.se" className="text-blue-400 hover:underline">
+                  jonas@startuprecruitment.se
+                </a>
+              </p>
+              <p className="text-lg">
+                <a href="https://www.linkedin.com/in/jonasaxelssonsthlm/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+                  LinkedIn Profile
+                </a>
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="bg-gray-100 text-black py-20">
